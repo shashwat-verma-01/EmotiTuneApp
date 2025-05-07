@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmotiTune - Emotion Based Music</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/@vladmandic/face-api/dist/face-api.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>EmotiTune 🎵</h1>
+
+    <video id="webcam" autoplay playsinline width="480" height="360"></video>
+    <canvas id="canvas" width="480" height="360" style="display: none;"></canvas>
+
+    <div class="buttons">
+      <button id="openWebcam">Open Webcam</button>
+      <button id="capture">Suggest Music</button>
+    </div>
+
+    <div id="emotionResult"></div>
+
+    <div id="songsContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
