@@ -1,3 +1,5 @@
+
+<<<<<<< HEAD
 flask
 flask-cors
 tensorflow
@@ -7,3 +9,4 @@ opencv-python
 Pillow
 yt-dlp
 gunicorn
+>>>>>>> 097ae35dc2ae459152825c15bd932593cc2596e4
