@@ -3,7 +3,7 @@ services:
     name: emotitune-backend
     env: python
     buildCommand: ""
-    startCommand: gunicorn -b 0.0.0.0:10000 app.main:app
+    startCommand: gunicorn -b 0.0.0.0:10000 app.main:app --timeout 120
     plan: free
     region: oregon
     branch: main
