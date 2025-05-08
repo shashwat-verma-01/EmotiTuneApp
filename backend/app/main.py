@@ -3,8 +3,8 @@ import numpy as np
 import cv2
 from tensorflow.keras.models import load_model
 from keras.utils import img_to_array
-from emotion_utils import detect_emotion
-from youtube_utils import get_youtube_songs_for_emotion  # ✅ NEW IMPORT
+from app.emotion_utils import detect_emotion
+from app.youtube_utils import get_youtube_songs_for_emotion  # ✅ NEW IMPORT
 from flask_cors import CORS
 
 app = Flask(__name__)
