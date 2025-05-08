@@ -6,11 +6,13 @@ from keras.utils import img_to_array
 from app.emotion_utils import detect_emotion
 from app.youtube_utils import get_youtube_songs_for_emotion  # ✅ NEW IMPORT
 from flask_cors import CORS
+import os
 
 app = Flask(__name__)
 CORS(app)
 # Load the emotion model
-model = load_model("model/emotion_model.keras")
+model_path = os.path.join(os.path.dirname(__file__), "model", "emotion_model.keras")
+model = load_model(model_path)
 
 @app.route("/")
 def index():
